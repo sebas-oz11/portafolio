@@ -1,0 +1,163 @@
+/* Establecer estilos generales para la página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Estilos para la sección de proyectos */
+#proyectos {
+  background-color: white;
+  padding: 60px 0;
+}
+
+#proyectos h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 10%;
+}
+
+.proyecto {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.proyecto h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.proyecto p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.boton {
+  display: inline-block;
+  background-color: #2575fc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #6a11cb;
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+}
+
+#contacto h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#contacto p {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#contacto a {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+#contacto a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el pie de página */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .proyectos-grid {
+    padding: 0 5%;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  #proyectos h2, #contacto h2 {
+    font-size: 28px;
+  }
+}
